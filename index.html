@@ -24,14 +24,12 @@
       }
 
       .hero-bg {
-        background: linear-gradient(
-            rgba(102, 126, 234, 0.9),
-            rgba(118, 75, 162, 0.9)
-          ),
-          url("your-image.jpg");
+        background: linear-gradient(#4d81cf, rgba(59, 80, 138, 0.5)),
+          url("images/scheroImage.png");
         background-size: cover;
         background-position: center;
       }
+
       .card-hover {
         transition: all 0.3s ease;
       }
@@ -68,6 +66,16 @@
       }
       .mobile-menu.active {
         transform: translateX(0);
+      }
+
+      .footer-hero-bg {
+        background: linear-gradient(
+            rgba(102, 126, 234, 0.9),
+            rgba(118, 75, 162, 0.9)
+          ),
+          url("images/scheroImage.png");
+        background-size: cover;
+        background-position: center;
       }
     </style>
   </head>
@@ -198,15 +206,15 @@
     <section class="hero-bg text-white py-20 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Are you ready to lean in<br />
-          <span class="text-yellow-300">without burning out?</span>
+          You exist to achieve your <br />
+          <span class="text-yellow-300"> utmost desires and goals</span>
         </h1>
         <p
           class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90"
         >
-          S'TYME Consulting partners with ambitious leaders and businesses to
-          navigate complexity, achieve sustainable growth, and forge new
-          frontiers in their personal and professional journeys.
+          All that which you wish to achieve is possible. It is possible in
+          time, with effort and intentional plan. Let me partner with you on
+          your growth journey and forge your new frontiers .
         </p>
         <div
           class="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -215,13 +223,13 @@
             onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
             class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg"
           >
-            Book a Call
+            Coaching & Mentoring
           </button>
           <button
             onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
             class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
           >
-            Learn More About Our Services
+            Business Growth Consultancy
           </button>
         </div>
       </div>
@@ -231,11 +239,12 @@
     <section id="about" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">About Us</h2>
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+            Our Unique Approach
+          </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            S'TYME Consulting aims to be South Africa's top business and
-            personal growth advisor, empowering leaders to achieve extraordinary
-            results.
+            We leverage cutting-edge neuroscience techniques and incorporate
+            life stages to create customized, time-bound plans for you.
           </p>
         </div>
 
@@ -243,6 +252,21 @@
           <div class="space-y-6">
             <div
               class="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-xl"
+            >
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                About Us
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                S'TYME Consulting aims to be South Africa's top business and
+                personal growth advisor, empowering leaders to achieve
+                extraordinary results. Using scientific approaches that ensures
+                that our strategies are not only effective but also sustainable
+                and aligned with natural human development.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl"
             >
               <h3 class="text-2xl font-semibold text-gray-900 mb-4">
                 Company Overview
@@ -253,21 +277,6 @@
                 2023, we partner with clients to help them navigate complexity
                 and achieve sustainable growth through innovative approaches and
                 proven methodologies.
-              </p>
-            </div>
-
-            <div
-              class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl"
-            >
-              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-                Unique Approach
-              </h3>
-              <p class="text-gray-700 leading-relaxed">
-                We leverage cutting-edge neuroscience techniques and incorporate
-                life stages to create customized, time-bound plans for our
-                clients. This scientific approach ensures that our strategies
-                are not only effective but also sustainable and aligned with
-                natural human development.
               </p>
             </div>
           </div>
@@ -594,13 +603,13 @@
     </section>
 
     <!-- Contact Us -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-white hero-bg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900 mb-6">
             Get in Touch with Us
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-xl text-white max-w-3xl mx-auto">
             Ready to forge your frontiers? Let's start the conversation about
             your growth journey.
           </p>
@@ -625,7 +634,7 @@
                 </div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-900">Email</h3>
-                  <p class="text-gray-600">info@stymeconsulting.com</p>
+                  <p class="text-white">info@stymeconsulting.com</p>
                 </div>
               </div>
 
@@ -645,7 +654,7 @@
                 </div>
                 <div>
                   <h3 class="text-lg font-semibold text-gray-900">Website</h3>
-                  <p class="text-gray-600">www.stymeconsulting.com</p>
+                  <p class="text-white">www.stymeconsulting.com</p>
                 </div>
               </div>
 
@@ -668,7 +677,7 @@
                   <a
                     href="https://www.linkedin.com/in/julia-sedibe-93a50556"
                     target="_blank"
-                    class="text-purple-600 hover:text-purple-800 transition-colors"
+                    class="text-white hover:text-purple-800 transition-colors"
                   >
                     Connect with Julia Sedibe
                   </a>
@@ -754,7 +763,7 @@
           if (target) {
             target.scrollIntoView({
               behavior: "smooth",
-              block: "start"
+              block: "start",
             });
           }
         });
