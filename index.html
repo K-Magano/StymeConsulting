@@ -24,14 +24,14 @@
       }
 
       .hero-bg {
-        background: linear-gradient(
-            rgba(102, 126, 234, 0.9),
-            rgba(118, 75, 162, 0.9)
-          ),
-          url("your-image.jpg");
+        background: 
+        url("https://i.postimg.cc/kXZ3BRv8/Ready-to-achieve-your-utmost-desires-Let-s-begin-the-journey-1.png");
         background-size: cover;
         background-position: center;
+        opacity: 1;
+        /* linear-gradient(#4d81cf, rgba(59, 80, 138, 0.5)) */
       }
+
       .card-hover {
         transition: all 0.3s ease;
       }
@@ -68,6 +68,16 @@
       }
       .mobile-menu.active {
         transform: translateX(0);
+      }
+
+      .footer-hero-bg {
+        background: linear-gradient(
+            rgba(102, 126, 234, 0.9),
+            rgba(118, 75, 162, 0.9)
+          ),
+          url("images/scheroImage.png");
+        background-size: cover;
+        background-position: center;
       }
     </style>
   </head>
@@ -195,47 +205,46 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-20 lg:py-32">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Are you ready to lean in<br />
-          <span class="text-yellow-300">without burning out?</span>
-        </h1>
-        <p
-          class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90"
-        >
-          S'TYME Consulting partners with ambitious leaders and businesses to
-          navigate complexity, achieve sustainable growth, and forge new
-          frontiers in their personal and professional journeys.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
-          <button
-            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
-            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg"
-          >
-            Book a Call
-          </button>
-          <button
-            onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
-            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
-          >
-            Learn More About Our Services
-          </button>
+    <section class="hero-bg text-white py-20 lg:py-32 bg-cover bg-center" >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-left">
+            <h1 class="text-4xl md:text-6xl text-black font-bold mb-6 leading-tight">
+                Ready to<br />
+                <span class="text-yellow-300"> achieve your Goals?</span>
+            </h1>
+            <h3 class="text-xl text-white md:text-2xl mb-8 max-w-3xl leading-relaxed ">
+                Let's begin your journey, together.
+            </h3>
+            <div class="flex flex-col sm:flex-row gap-4 justify-start items-center">
+                <button
+                    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                    class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg"
+                >
+                    Coaching & Mentoring
+                </button>
+                <button
+                    onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+                    class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
+                >
+                    Business Growth Consultancy
+                </button>
+            </div>
         </div>
-      </div>
-    </section>
+        <div class="md:w-1/2 hidden md:block">
+            </div>
+    </div>
+</section>
 
     <!-- About Us -->
     <section id="about" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">About Us</h2>
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+            Our Unique Approach
+          </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            S'TYME Consulting aims to be South Africa's top business and
-            personal growth advisor, empowering leaders to achieve extraordinary
-            results.
+            We leverage cutting-edge neuroscience techniques and incorporate
+            life stages to create customized, time-bound plans for you.
           </p>
         </div>
 
@@ -243,6 +252,21 @@
           <div class="space-y-6">
             <div
               class="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-xl"
+            >
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                About Us
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+               At S'TYME Consulting we aim to be South Africa's top business and
+                personal growth advisor, empowering leaders to achieve
+                extraordinary results. Using scientific approaches that ensures
+                that our strategies are not only effective but also sustainable
+                and aligned with natural human development.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl"
             >
               <h3 class="text-2xl font-semibold text-gray-900 mb-4">
                 Company Overview
@@ -255,36 +279,14 @@
                 proven methodologies.
               </p>
             </div>
-
-            <div
-              class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl"
-            >
-              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
-                Unique Approach
-              </h3>
-              <p class="text-gray-700 leading-relaxed">
-                We leverage cutting-edge neuroscience techniques and incorporate
-                life stages to create customized, time-bound plans for our
-                clients. This scientific approach ensures that our strategies
-                are not only effective but also sustainable and aligned with
-                natural human development.
-              </p>
-            </div>
           </div>
 
           <div class="relative">
             <div
               class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center"
             >
-              <svg
-                class="w-48 h-48 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
+              <img src="https://i.postimg.cc/zfMQvCkR/human-brain-on-tree-with-flowers-concepts-of-yellow-light-on-blue-background-free-photo.jpg"
+              class="rounded-2xl shadow-lg object-cover h-full w-full">
             </div>
             <div
               class="absolute -bottom-4 -right-4 bg-yellow-400 rounded-full p-4"
@@ -320,15 +322,8 @@
               <div
                 class="step-number w-12 h-12 rounded-full flex items-center justify-center mr-4"
               >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-                  />
-                </svg>
+                <img src="https://i.postimg.cc/Njb6dQ9s/vecteezy-team-work-life-goals-and-self-improvement-concept-man-21915939.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
               </div>
               <h3 class="text-2xl font-bold text-gray-900">
                 Personal Coaching & Mentoring
@@ -359,15 +354,8 @@
               <div
                 class="step-number w-12 h-12 rounded-full flex items-center justify-center mr-4"
               >
-                <svg
-                  class="w-6 h-6 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"
-                  />
-                </svg>
+               <img src="https://i.postimg.cc/QMG3nZRz/vecteezy-blue-metal-block-stacking-as-step-stair-with-white-arrow-up-22090944.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
               </div>
               <h3 class="text-2xl font-bold text-gray-900">
                 Business Growth Consultancy
@@ -405,84 +393,66 @@
       </div>
     </section>
 
-    <!-- How We Work -->
-    <section id="how-we-work" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
-            How Does It Work
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our proven 4-step methodology ensures sustainable results and
-            meaningful transformation.
-          </p>
+   <section id="how-we-work" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">How Does It Work</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our proven 4-step methodology ensures sustainable results and meaningful transformation.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m0 0l-2-1m2 1v2.5M4 7l2-1m0 0l2-1m-2 1v2.5M16 13h-4l-2 1m2 1v2.5M8 13h-4l-2 1m2 1v2.5" />
+          </svg>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Step 1 -->
-          <div class="text-center group">
-            <div
-              class="step-number w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
-            >
-              <span class="text-white font-bold text-xl">1</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
-              Define Scope & Goals
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              We outline and align on what needs to be achieved, "painting the
-              vision" for your success journey.
-            </p>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="text-center group">
-            <div
-              class="step-number w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
-            >
-              <span class="text-white font-bold text-xl">2</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
-              Develop Strategy & Plan
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              We design strategic plans with time-bound actions, identifying
-              "windows of Pivots and Growth".
-            </p>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="text-center group">
-            <div
-              class="step-number w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
-            >
-              <span class="text-white font-bold text-xl">3</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">
-              Actions - Reflect - Actions
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Implementation with continuous assessment, reflection on
-              learnings, and momentum building.
-            </p>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="text-center group">
-            <div
-              class="step-number w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform"
-            >
-              <span class="text-white font-bold text-xl">4</span>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Celebrations</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Acknowledging the journey, pausing to appreciate results, and
-              celebrating achievements.
-            </p>
-          </div>
-        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Define Scope & Goals</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We outline and align on what needs to be achieved, "painting the vision" for your success journey.
+        </p>
       </div>
-    </section>
+
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2c0 2.21-1.79 4-4 4S4 8.21 4 6m8 0a4 4 0 014 4c0 2.21-1.79 4-4 4m0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-4c-2.21 0-4-1.79-4-4s1.79-4 4-4z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Develop Strategy & Plan</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We design strategic plans with time-bound actions, identifying "windows of Pivots and Growth".
+        </p>
+      </div>
+
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2m-4 0V3m0 2h.01M16 16l-4 4-4-4m4-4v8" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Actions - Reflect - Actions</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Implementation with continuous assessment, reflection on learnings, and momentum building.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Celebrations</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Acknowledging the journey, pausing to appreciate results, and celebrating achievements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Why Choose Us -->
     <section id="why-choose-us" class="py-20 bg-gray-50">
@@ -503,13 +473,8 @@
             <div
               class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <svg
-                class="w-8 h-8 text-green-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              <img src="https://i.postimg.cc/ZYyX2MLt/vecteezy-wooden-blocks-laying-on-the-table-arrow-icon-hitting-center-21698921.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">
               Proven Capability
@@ -525,15 +490,8 @@
             <div
               class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <svg
-                class="w-8 h-8 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                />
-              </svg>
+              <img src="https://i.postimg.cc/SNcRSVkH/vecteezy-customers-rate-service-on-basis-of-excellent-satisfaction-11908855.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">Experience</h3>
             <p class="text-gray-600">
@@ -547,15 +505,8 @@
             <div
               class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <svg
-                class="w-8 h-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 13.5l3.5 2.5-3.5 2.5L8.5 16l3.5-2.5z"
-                />
-              </svg>
+               <img src="https://i.postimg.cc/L6QCskDB/vecteezy-bright-daisy-on-modern-pedestal-against-blue-background-in-69595658.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">
               Original & Transformative
@@ -571,15 +522,8 @@
             <div
               class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"
             >
-              <svg
-                class="w-8 h-8 text-yellow-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                />
-              </svg>
+               <img src="https://i.postimg.cc/gcQLknRL/vecteezy-golden-crown-isolated-26829474.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-3">
               Superior Service
@@ -594,13 +538,13 @@
     </section>
 
     <!-- Contact Us -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-white hero-bg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          <h2 class="text-4xl font-bold text-yellow-300">
             Get in Touch with Us
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-xl text-white max-w-3xl mx-auto">
             Ready to forge your frontiers? Let's start the conversation about
             your growth journey.
           </p>
@@ -624,8 +568,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900">Email</h3>
-                  <p class="text-gray-600">info@stymeconsulting.com</p>
+                  <h3 class="text-lg font-semibold text-yellow-300">Email</h3>
+                  <p class="text-white">info@stymeconsulting.com</p>
                 </div>
               </div>
 
@@ -644,8 +588,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900">Website</h3>
-                  <p class="text-gray-600">www.stymeconsulting.com</p>
+                  <h3 class="text-lg font-semibold text-yellow-300">Website</h3>
+                  <p class="text-white">www.stymeconsulting.com</p>
                 </div>
               </div>
 
@@ -664,11 +608,11 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900">LinkedIn</h3>
+                  <h3 class="text-lg font-semibold text-yellow-300">LinkedIn</h3>
                   <a
-                    href="https://linkedin.com/in/julia-sedibe"
+                    href="https://www.linkedin.com/in/julia-sedibe-93a50556"
                     target="_blank"
-                    class="text-purple-600 hover:text-purple-800 transition-colors"
+                    class="text-white hover:text-purple-800 transition-colors"
                   >
                     Connect with Julia Sedibe
                   </a>
