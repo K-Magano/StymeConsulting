@@ -11,6 +11,22 @@
     />
     <style>
       body {
+        font-family: "Inter", sans-serif;<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S'TYME Consulting - Forge Your Frontiers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+  <link rel="preload" as="image" href="hero-image.webp" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
         font-family: "Inter", sans-serif;
       }
       .gradient-bg {
@@ -25,6 +41,750 @@
 
       .hero-bg {
         background: url("https://i.postimg.cc/kXZ3BRv8/Ready-to-achieve-your-utmost-desires-Let-s-begin-the-journey-1.png");
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        /* linear-gradient(#4d81cf, rgba(59, 80, 138, 0.5)) */
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+      .nav-link:hover {
+        color: #667eea;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      .step-number {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+      }
+      .mobile-menu.active {
+        transform: translateX(0);
+      }
+
+      .footer-hero-bg {
+        background: linear-gradient(
+            rgba(102, 126, 234, 0.9),
+            rgba(118, 75, 162, 0.9)
+          ),
+          url("images/scheroImage.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+
+
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-10 h-10 rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-xl"><img src="https://i.postimg.cc/zGGcqzgM/Ready-to-achieve-your-utmost-desires-Let-s-begin-the-journey.png"></span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-gray-900">S'TYME Consulting</h1>
+              <p class="text-sm text-gray-600 italic">Forge your Frontiers</p>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#about"
+              class="nav-link text-gray-700 hover:text-purple-600 font-medium"
+              >About Us</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-700 hover:text-purple-600 font-medium"
+              >Our Services</a
+            >
+            <a
+              href="#how-we-work"
+              class="nav-link text-gray-700 hover:text-purple-600 font-medium"
+              >How We Work</a
+            >
+            <a
+              href="#why-choose-us"
+              class="nav-link text-gray-700 hover:text-purple-600 font-medium"
+              >Why Choose Us</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-purple-600 font-medium"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 rounded-lg hover:bg-gray-100"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50 md:hidden"
+      >
+        <div class="p-6">
+          <button
+            id="close-menu"
+            class="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="mt-8 space-y-4">
+            <a
+              href="#about"
+              class="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              >About Us</a
+            >
+            <a
+              href="#services"
+              class="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              >Our Services</a
+            >
+            <a
+              href="#how-we-work"
+              class="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              >How We Work</a
+            >
+            <a
+              href="#why-choose-us"
+              class="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              >Why Choose Us</a
+            >
+            <a
+              href="#contact"
+              class="block py-2 text-gray-700 hover:text-purple-600 font-medium"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 lg:py-32 bg-cover bg-center" >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/1 text-left">
+            <h1 class="text-4xl md:text-6xl text-white font-bold mb-6 leading-tight">
+                Ready to<br />
+                <span class="text-yellow-300"> achieve your Goals?</span>
+            </h1>
+            <h3 class="text-xl text-white md:text-2xl mb-8 max-w-3xl leading-relaxed ">
+                Let's begin your journey, together.
+            </h3>
+  <div class="flex flex-col sm:flex-row gap-5 justify-start items-center">
+  <button
+    onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+    class="bg-yellow-400 text-gray-900 px-5 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-200 transition-colors"
+  >
+    <b>PERSONAL DEVELOPMENT CONSULTANCY</b>
+    <br></br>
+    Coaching & Mentoring
+  </button>
+  <button
+    onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+    class="border-2 border-white text-white px-5 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors"
+  >
+    <b>BUSINESS DEVELOPMENT 
+      AND STRATEGY CONSULTANCY</b>
+    <br></br>
+    Revenue growth and scaling
+  </button>
+</div>
+        </div>
+        <div class="md:w-1/2 hidden md:block">
+            </div>
+    </div>
+</section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+            Our Unique Approach
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+           We integrate and leverage pivotal stages and growth windows in crafting customised time-bound growth plans aligned to goals and transitions within specificity.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <div
+              class="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-xl"
+            >
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                About Us
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+               At STYME Consulting we aim to be an advisory partners to empower your business and personal goals, to forge with you as you transition and achieved your desired extra ordinary results.
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl"
+            >
+              <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                Company Overview
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+             We focus on supporting business growth, maximise potential, navigate business strategies and develop sustained results. We build brands that connects with communities, we commercialise and scale your business and individuals. Partner with us on journey and let us maximise windows of opportunities and forge pivots.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center"
+            >
+              <img src="https://i.postimg.cc/2SV0Rzfg/vecteezy-a-successful-business-team-presenting-smiling-and-applaud-32933466.jpg"
+              class="rounded-2xl shadow-lg object-cover h-full w-full">
+            </div>
+            <div
+              class="absolute -bottom-4 -right-4 bg-yellow-400 rounded-full p-4"
+            >
+              <svg
+                class="w-8 h-8 text-gray-900"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive solutions designed to unlock your potential and drive
+            sustainable growth.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Personal Coaching -->
+           
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+            <div class="flex items-center mb-6">
+              <div
+                class="step-number w-12 h-12 rounded-full flex items-center justify-center mr-4"
+              >
+                <img src="https://i.postimg.cc/Njb6dQ9s/vecteezy-team-work-life-goals-and-self-improvement-concept-man-21915939.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900">
+                Personal Coaching & Mentoring
+              </h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              We help clients develop customized plans to achieve their goals by
+              crafting a comprehensive "game-plan" that assists them in becoming
+              the best version of themselves, moving with purpose and intention
+              through every stage of their journey.
+            </p>
+
+                        <div class="space-y-3">
+              <div class="bg-blue-50 p-3 rounded-lg">
+                <p class="text-blue-800 font-medium">
+                 ✨ Personalized development strategies
+                </p>
+              </div>
+              <div class="bg-green-50 p-3 rounded-lg">
+                <p class="text-green-800 font-medium">
+                     🎯 Goal-oriented action plans
+                </p>
+              </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                <p class="text-purple-800 font-medium">
+                 🧠 Neuroscience-based approaches
+                </p>
+              </div>
+            </div>
+         </div>
+
+          <!-- Business Growth -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+            <div class="flex items-center mb-6">
+              <div
+                class="step-number w-12 h-12 rounded-full flex items-center justify-center mr-4"
+              >
+               <img src="https://i.postimg.cc/QMG3nZRz/vecteezy-blue-metal-block-stacking-as-step-stair-with-white-arrow-up-22090944.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900">
+                Business Growth Consultancy
+              </h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Our consultancy services focus on developing growth pathways,
+              revenue maximization, and scalability solutions tailored to your
+              business needs and market opportunities.
+            </p>
+            <div class="space-y-3">
+              <div class="bg-blue-50 p-3 rounded-lg">
+                <p class="text-blue-800 font-medium">
+                  📈 Market Entry & Optimization Strategy
+                </p>
+              </div>
+              <div class="bg-green-50 p-3 rounded-lg">
+                <p class="text-green-800 font-medium">
+                  💰 Financial Projections & Pitch Decks
+                </p>
+              </div>
+              <div class="bg-yellow-50 p-3 rounded-lg">
+                <p class="text-yellow-800 font-medium">
+                  🎨 Marketing & Brand Communication
+                </p>
+              </div>
+              <div class="bg-purple-50 p-3 rounded-lg">
+                <p class="text-purple-800 font-medium">
+                  🔧 Business Tool Development & Analytics
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section id="how-we-work" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">How Does It Work</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our proven 4-step methodology ensures sustainable results and meaningful transformation.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m0 0l-2-1m2 1v2.5M4 7l2-1m0 0l2-1m-2 1v2.5M16 13h-4l-2 1m2 1v2.5M8 13h-4l-2 1m2 1v2.5" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Define Scope & Goals</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We outline and align on what needs to be achieved, "painting the vision" for your success journey.
+        </p>
+      </div>
+
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2c0 2.21-1.79 4-4 4S4 8.21 4 6m8 0a4 4 0 014 4c0 2.21-1.79 4-4 4m0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-4c-2.21 0-4-1.79-4-4s1.79-4 4-4z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Develop Strategy & Plan</h3>
+        <p class="text-gray-600 leading-relaxed">
+          We design strategic plans with time-bound actions, identifying "windows of Pivots and Growth".
+        </p>
+      </div>
+
+      <div class="text-center relative after:content-[''] after:hidden lg:after:block after:absolute after:top-1/2 after:left-[calc(100%+0.5rem)] after:-translate-y-1/2 after:w-16 after:h-px after:bg-gray-300">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2m-4 0V3m0 2h.01M16 16l-4 4-4-4m4-4v8" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Actions - Reflect - Actions</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Implementation with continuous assessment, reflection on learnings, and momentum building.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-yellow-400 text-white">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Celebrations</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Acknowledging the journey, pausing to appreciate results, and celebrating achievements.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose-us" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">
+            Key Reasons to Choose Us
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover what sets S'TYME Consulting apart in the competitive
+            landscape of business growth and personal development.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Proven Capability -->
+          <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center card-fade-in">
+            <div
+              class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <img src="https://i.postimg.cc/ZYyX2MLt/vecteezy-wooden-blocks-laying-on-the-table-arrow-icon-hitting-center-21698921.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Transformational
+            </h3>
+            <p class="text-gray-600">
+              We focus on manifesting the plans into reality and actions that are measurable
+            </p>
+          </div>
+
+          <!-- Experience -->
+          <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <img src="https://i.postimg.cc/SNcRSVkH/vecteezy-customers-rate-service-on-basis-of-excellent-satisfaction-11908855.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Customization</h3>
+            <p class="text-gray-600">
+              Every plan developed is unique to business and personal path, we embrace differentiation that suits each specific journey “No copy and paste”
+            </p>
+          </div>
+
+          <!-- Original & Transformative -->
+          <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+               <img src="https://i.postimg.cc/L6QCskDB/vecteezy-bright-daisy-on-modern-pedestal-against-blue-background-in-69595658.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Expertise
+            </h3>
+            <p class="text-gray-600">
+              Work with qualified and certified team who are industry experts to work through the plans and achieve your desired results. 
+            </p>
+          </div>
+
+          <!-- Superior Service <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+            <div
+              class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+               <img src="https://i.postimg.cc/gcQLknRL/vecteezy-golden-crown-isolated-26829474.jpg"
+                class="rounded-2xl shadow-lg object-cover h-full w-full"/>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Superior Service
+            </h3>
+            <p class="text-gray-600">
+              Our unwavering commitment to complete client satisfaction drives
+              everything we do, ensuring exceptional outcomes.
+            </p>
+          </div> -->
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-20 bg-white hero-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-yellow-300">
+            Get in Touch with Us
+          </h2>
+          <p class="text-xl text-white max-w-3xl mx-auto">
+            Ready to forge your frontiers? <br>Let's start the conversation about
+            your growth journey.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-purple-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-yellow-300">Email</h3>
+                  <p class="text-white">info@stymeconsulting.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-yellow-300">Website</h3>
+                  <p class="text-white">www.stymeconsulting.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-yellow-300">LinkedIn</h3>
+                  <a
+                    href="https://www.linkedin.com/in/julia-sedibe-93a50556"
+                    target="_blank"
+                    class="text-white hover:text-purple-800 transition-colors"
+                  >
+                    Connect with Julia Sedibe
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl"
+            >
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                Ready to Get Started?
+              </h3>
+              <p class="text-gray-700 mb-6 leading-relaxed">
+                Take the first step towards transforming your business and
+                personal growth. Book a consultation call to discuss your goals
+                and discover how we can help you forge your frontiers.
+              </p>
+              <button
+                onclick="window.open('mailto:info@stymeconsulting.com?subject=Consultation Request', '_blank')"
+                class="w-full gradient-bg text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              >
+                Book Your Consultation Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex items-center space-x-3 mb-4 md:mb-0">
+            <div
+              class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-xl">S</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold">S'TYME Consulting</h3>
+              <p class="text-gray-400 italic">forge your frontiers</p>
+            </div>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-gray-400">
+              © 2023 S'TYME Consulting. All rights reserved.
+            </p>
+            <p class="text-gray-400">Johannesburg, South Africa</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenuBtn = document.getElementById("close-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+      });
+
+      // Close mobile menu when clicking on links
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+        });
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to header
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("shadow-lg");
+        } else {
+          header.classList.remove("shadow-lg");
+        }
+      });
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'98029194d2588468',t:'MTc1ODA0ODgyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
+
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .text-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-bg {
+        background: 
+        url("https://i.postimg.cc/kXZ3BRv8/Ready-to-achieve-your-utmost-desires-Let-s-begin-the-journey-1.png");
         background-size: cover;
         background-position: center;
         opacity: 1;
